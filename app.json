@@ -1,9 +1,10 @@
 {
   "expo": {
-    "name": "anime-rating-app",
-    "slug": "anime-rating-app",
+    "name": "do-it-now",
+    "slug": "do-it-now",
+    "owner": "hikandgo",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
@@ -14,9 +15,7 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
