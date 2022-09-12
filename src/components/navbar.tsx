@@ -1,13 +1,15 @@
-import React from "react";
-// eslint-disable-next-line import/namespace
-import { View, StyleSheet } from "react-native";
+import React from 'react';
+import { View, StyleSheet } from 'react-native';
+import { AppTextBold } from './UI/appTextBold';
 
-import { AppTextBold } from "./UI/appTextBold";
-
-export const Navbar = (props) => {
+export const Navbar = ({ title }) => {
   return (
-    <View style={styles.navbar}>
-      <AppTextBold style={styles.text}>DO IT NOW</AppTextBold>
+    <View
+      style={{
+        ...styles.navbar,
+      }}
+    >
+      <AppTextBold style={styles.text}>{title}</AppTextBold>
     </View>
   );
 };
@@ -15,14 +17,12 @@ export const Navbar = (props) => {
 const styles = StyleSheet.create({
   navbar: {
     height: 70,
-    alignItems: "center",
-    justifyContent: "flex-end",
-    backgroundColor: "black",
-    paddingBottom: 5,
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    paddingBottom: 10,
+    backgroundColor: 'white',
   },
   text: {
-    color: "white",
     fontSize: 20,
-    fontFamily: "OpenSans-Bold",
   },
 });

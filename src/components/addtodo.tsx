@@ -1,20 +1,20 @@
-import { Ionicons } from "@expo/vector-icons";
-import React, { useState } from "react";
-// eslint-disable-next-line import/namespace
-import { View, StyleSheet, TextInput, Alert, Keyboard } from "react-native";
+import React from 'react';
+import { Ionicons } from '@expo/vector-icons';
+import { useState } from 'react';
+import { Alert, Keyboard, TextInput, View, StyleSheet } from 'react-native';
+import { AppButton } from './UI/appButton';
 
-import { AppButton } from "./UI/appButton";
 
 export const AddTodo = ({ onSubmit }) => {
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState('');
 
   const pressHandler = () => {
     if (value.trim()) {
       onSubmit(value);
-      setValue("");
+      setValue('');
       Keyboard.dismiss();
     } else {
-      Alert.alert("Название дела не может быть пустым");
+      Alert.alert('Название дела не может быть пустым');
     }
   };
 
@@ -37,16 +37,16 @@ export const AddTodo = ({ onSubmit }) => {
 
 const styles = StyleSheet.create({
   block: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
     marginBottom: 15,
   },
   input: {
-    width: "60%",
+    width: '60%',
     padding: 10,
-    borderStyle: "dashed",
+    borderStyle: 'solid',
     borderBottomWidth: 2,
-    borderBottomColor: "black",
+    borderBottomColor: 'black',
   },
 });

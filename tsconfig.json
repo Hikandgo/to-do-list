@@ -3,6 +3,12 @@
   "compilerOptions": {
     "strict": true,
     "noImplicitAny": false,
-    "strictNullChecks": false
-  }
+    "strictNullChecks": false,
+    "target": "ES6",
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "sourceMap": true
+  },
+  "exclude": ["_tests_/**/*-test.ts"]
 }

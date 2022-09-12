@@ -1,11 +1,9 @@
-import React from "react";
-// eslint-disable-next-line import/namespace
-import { StyleSheet, TouchableOpacity, View } from "react-native";
+import React from 'react';
+import { TouchableOpacity, View, StyleSheet } from 'react-native';
+import { AppTextBold } from './appTextBold';
 
-import { THEME } from "../../theme";
-import { AppTextBold } from "./appTextBold";
 
-export const AppButton = ({ children, onPress, color = THEME.MAIN_COLOR }) => {
+export const AppButton = ({ children, onPress, color = 'black' }) => {
   return (
     <TouchableOpacity onPress={onPress} activeOpacity={0.7}>
       <View style={{ ...styles.button, backgroundColor: color }}>
@@ -20,12 +18,11 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 10,
     borderRadius: 5,
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "center",
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   text: {
-    color: "white",
-    fontFamily: "OpenSans-Bold",
+    color: 'white',
   },
 });

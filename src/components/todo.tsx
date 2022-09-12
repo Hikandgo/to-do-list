@@ -1,8 +1,6 @@
-/* eslint-disable import/namespace */
-/* eslint-disable react/jsx-no-bind */
-import { MaterialCommunityIcons } from "@expo/vector-icons";
-import React from "react";
-import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
+import { MaterialCommunityIcons } from '@expo/vector-icons';
+import React from 'react';
+import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
 
 export const Todo = ({ todo, onRemove, onOpen }) => {
   return (
@@ -25,17 +23,17 @@ export const Todo = ({ todo, onRemove, onOpen }) => {
 
 const styles = StyleSheet.create({
   todo: {
-    flexDirection: "row",
-    alignItems: "center",
+    flexDirection: 'row',
+    alignItems: 'center',
     padding: 15,
     borderWidth: 1,
-    borderColor: "white",
+    borderColor: 'black',
     borderRadius: 5,
     marginBottom: 10,
-    backgroundColor: "black",
+    backgroundColor: 'black',
+    marginHorizontal: 10,
   },
   title: {
-    color: "white",
-    fontFamily: "OpenSans-Regular",
+    color: 'white',
   },
 });
